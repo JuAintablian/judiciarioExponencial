@@ -1,0 +1,10 @@
+.icon {
+  background-repeat: no-repeat;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}

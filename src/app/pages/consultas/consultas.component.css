@@ -1,0 +1,47 @@
+.itemBtn {
+  background: #0D0B6C;
+  border: 2px solid #0D0B6C;
+  box-sizing: border-box;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 42%;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.itemBtn label {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 30px;
+  color: #0D0B6C;
+  padding: 20px 0 0 25px;
+  font-weight: bold;
+}
+
+.consulta {
+  padding: 25px;
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 18px;
+  color: #0D0B6C;
+}

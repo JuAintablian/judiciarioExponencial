@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div>
+  <h1>Meus processos</h1>
+  <div class="miniMenu">
+    <span class="active">GERAL</span>
+    <span class="inactive">PARTES</span>
+    <span class="inactive">MOVIMENTOS</span>
+  </div>
+  <div class="informacoes">
+    <p>Órgão Julgador</p>
+    <span>{{ processo.orgaoJulgador }}</span>
+    <p>Classe</p>
+    <span>{{ processo.classe }}</span>
+    <p>Assunto Principal</p>
+    <span>{{ processo.assuntoPrincipal }}</span>
+    <p>Data da Distribuição</p>
+    <span>{{ processo.data }}</span>
+    <div class="row">
+
+      <div class="w-5">
+        <p>Processo Sigiloso</p>
+        <span>{{ processo.processoSigiloso }}</span>
+        <p>Assistencia Jud. Gratuita</p>
+        <span>{{ processo.assistencia }}</span>
+      </div>
+      <div class="w-5">
+        <p>Transitou em Julgado</p>
+        <span>{{ processo.transitouEmJulgado }}</span>
+        <p>Valor da Ação</p>
+        <span>{{ processo.valor }}</span>
+      </div>
+    </div>
+    <p>Status</p>
+    <span>{{ processo.status }}</span>
+    <p>Assuntos Secundários</p>
+    <span *ngFor="let item of processo.assuntosSecundarios" class="column">{{ item }}</span>
+  </div>
+</div>
+
+<app-footer></app-footer>

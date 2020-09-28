@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div class="menu">
+  <img src="../../../assets/img/chatMenu.png" class="chatMenu">
+  <div class="linha">
+      <div *ngFor="let item of listMenu" class="itemMenu" (click)="redirect(item.link)">
+        <img src="../../../assets/img/{{ item.icone }}.png">
+        <label>{{ item.label }}</label>
+      </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,62 @@
+<app-header></app-header>
+<div>
+  <h1>Consultas</h1>
+  <div class="linha">
+    <div *ngFor="let item of listBtn" class="itemBtn" (click)="redirect(item.link)">
+      <label>{{ item.label }}</label>
+    </div>
+  </div>
+
+  <div class="consulta">
+    <h3>Consulta 1º Grau - eSaj</h3>
+    <b>Orientações</b>
+    <ul>
+      <li>Processos distribuídos no mesmo dia podem ser localizados se buscados pelo número do processo, com o seu foro selecionado.</li>
+      <li>Dúvidas? <a>Clique aqui</a> para mais informações sobre como pesquisar</li>
+      <li>Processos baixados, em segredo de justiça ous distribuídos no mesmo dia serão apresentados somente na pesquisa pelo número do processo.</li>
+    </ul>
+
+    <div>
+      <h3 class="pesquisa">Dados para a pesquisa</h3>
+      <form>
+        <div class="form-group row">
+          <label for="comarca" class="col-sm-2 col-form-label">Comarca:</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="comarca">
+              <option>Todas as comarcas</option>
+              <option>Comarca X</option>
+              <option>Comarca Y</option>
+              <option>Comarca Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="pesquisarPor" class="col-sm-2 col-form-label">Pesquisar por:</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="pesquisarPor">
+              <option>Número do processo</option>
+              <option>Outro</option>
+            </select>
+            <div class="form-check form-check-inline pt-2">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Unificado</label>
+            </div>
+            <div class="form-check form-check-inline pt-2">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Outros</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputNumero" class="col-sm-2 col-form-label">Número do Processo:</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="inputNumero">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="redirect('pesquisar')">Pesquisar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,83 @@
+.itemBtn {
+  background: #0D0B6C;
+  border: 2px solid #0D0B6C;
+  box-sizing: border-box;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 42%;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.itemBtn label {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 30px;
+  color: #0D0B6C;
+  padding: 20px 0 0 25px;
+  font-weight: bold;
+}
+
+.miniMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0D0B6C;
+  padding: 0 25px;
+}
+
+.miniMenu span {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.active {
+  color: #fff;
+}
+
+.inactive {
+  color: #C8C8C8;
+}
+
+.w-5 {
+  width: 50%;
+  padding-left: 15px;
+}
+
+.informacoes {
+  padding: 20px;
+}
+
+.informacoes p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #0D0B6C;
+}
+
+.informacoes span {
+  font-size: 13px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}

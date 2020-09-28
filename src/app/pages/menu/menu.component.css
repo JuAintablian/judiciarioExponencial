@@ -1,0 +1,46 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.chatMenu {
+  width: 100%;
+}
+
+.itemMenu {
+  background: #FFFFFF;
+  border: 2px solid #0D0B6C;
+  box-sizing: border-box;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.itemMenu label {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  color: #0D0B6C;
+  padding-top: 10px;
+}
+
+.itemMenu img {
+  width: 70%;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15px;
+}

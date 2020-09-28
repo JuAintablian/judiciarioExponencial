@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="mb-67">
+  <h1>Consultas</h1>
+  <div class="linha">
+    <div *ngFor="let item of processos" class="itemBtn" (click)="redirect(item.link)">
+      <div class="w-8 itens">
+        <label><b>NUMERO: </b>{{ item.numero }}</label>
+        <label><b>LOCAL: </b>{{ item.local }}</label>
+        <label><b>CLASSE: </b>{{ item.classe }}</label>
+        <label><b>DATA: </b>{{ item.data }}</label>
+      </div>
+      <div class="w-2">
+        <label class="green"><b>STATUS: </b>{{ item.status }}</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

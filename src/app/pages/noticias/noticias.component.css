@@ -1,0 +1,21 @@
+h1 {
+  font-size: 25px;
+  line-height: 30px;
+  color: #0D0B6C;
+  padding: 20px 0 0 0;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+.content {
+  padding: 20px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  padding: 40px 0 !important;
+}
